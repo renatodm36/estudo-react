@@ -3,3 +3,9 @@
     display: flex;
     flex-direction: row; 
 }
+
+.conteiner-imagem img
+{
+    width: 150px;
+    margin: 5px;
+}
