@@ -7,7 +7,7 @@ function App() {
     <>
       <div className='container'>
         <h1>Formulario</h1>
-        <MyForm />
+        <MyForm user={{name:"Renato" ,email:"renato@gmail.com",bio:"Estudante de React",role:"Admin"}} />
       </div>
 
     </>
