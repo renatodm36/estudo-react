@@ -1,8 +1,17 @@
 import './Game.css'
 
-const Game = () => {
+interface GameProps {
+  verifyLetter: () => void;
+}
+
+const Game : React.FC<GameProps> = ({ verifyLetter }) => {
   return (
-    <div>Game</div>
+    <>
+      <div>
+          <h1>Game</h1>
+          <button onClick={verifyLetter}>Fim de Jogo</button>
+      </div>
+    </>
   )
 }
 

@@ -22,17 +22,31 @@ function App() {
   const[gameState, setGameStage] = useState(stages[0].name);
   const [words] = useState(wordsList);
 
+
+  //Start the secret word game
   const startGame = () =>
   {
     setGameStage(stages[1].name);
+  }
+
+  // Processar letra clicada
+  const verifyLetter = () =>
+  {
+    setGameStage(stages[2].name)
+  }
+  
+  // Reiniciar Jogo
+  const retry = () =>
+  {
+    setGameStage(stages[0].name)
   }
 
   return (
     <>
       <div className='App'>      
         {gameState==='start' && <StartScreen startGame={startGame}/>}
-        {gameState==='game' && <Game/>}
-        {gameState==='end' && <GameOver/>}
+        {gameState==='game' && <Game verifyLetter={verifyLetter}/>}
+        {gameState==='end' && <GameOver retry={retry}/>}
       </div>
     </>
   )

@@ -1,8 +1,17 @@
 import './GameOver.css'
 
-const GameOver = () => {
+interface Retry {
+  retry: () => void;
+}
+
+const GameOver : React.FC<Retry> = ({ retry }) => {
   return (
-    <div>GameOver</div>
+    <>
+    <div>
+        <h1>Game Over</h1>
+        <button onClick={retry}>Fim de Jogo</button>
+    </div>
+  </>
   )
 }
 
