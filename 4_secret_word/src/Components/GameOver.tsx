@@ -2,14 +2,18 @@ import './GameOver.css'
 
 interface Retry {
   retry: () => void;
+  score: number;
 }
 
-const GameOver : React.FC<Retry> = ({ retry }) => {
+const GameOver : React.FC<Retry> = ({ retry, score }) => {
   return (
     <>
-    <div>
-        <h1>Game Over</h1>
-        <button onClick={retry}>Fim de Jogo</button>
+     <div className="gameover">
+      <h1>Fim de jogo!</h1>
+      <h2>
+        A sua pontuação foi: <span>{score}</span>!
+      </h2>
+      <button onClick={retry}>Reiniciar</button>
     </div>
   </>
   )
