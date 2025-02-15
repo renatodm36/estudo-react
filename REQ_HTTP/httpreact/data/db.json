@@ -1,0 +1,30 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Camiseta Básica",
+            "preco": 49.99,
+            "estoque": 20
+        },
+        {
+            "id": 2,
+            "nome": "Calça Jeans",
+            "preco": 129.90,
+            "estoque": 10
+        },
+        {
+            "id": 3,
+            "nome": "Tênis Esportivo",
+            "preco": 299.99,
+            "estoque": 5
+        },
+        {
+            "id": 4,
+            "nome": "Mochila Escolar",
+            "preco": 89.90,
+            "estoque": 12
+        }
+        
+    ]    
+  
+}
